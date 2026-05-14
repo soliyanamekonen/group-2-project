@@ -1,265 +1,274 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Forms Project</title>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Tables Project</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <h1>Forms and Tables Project</h1>
 
-<h1>Project</h1>
+    <!-- Personal Information Form-->
 
-<!-- Project 1 -->
+    <section class="section">
 
-<h2>
-</h2>
+        <h2>User Personal Information Form</h2>
 
-<div class="personal-form">
+        <div class="personal-form">
 
-    <fieldset>
-        <legend><b>User Personal Information</b></legend>
+            <form>
 
-        <form>
+                <fieldset>
 
-            <label>Enter your full name:</label>
-            <input type="text">
+                    <legend>User Personal Information</legend>
 
-            <label>Enter your email:</label>
-            <input type="email">
+                    <label for="fullname">Enter your full name:</label>
+                    <input type="text" id="fullname">
 
-            <label>Enter your password:</label>
-            <input type="password">
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email">
 
-            <label>Confirm your password:</label>
-            <input type="password">
+                    <label for="password">Enter your password:</label>
+                    <input type="password" id="password">
 
-            <label>Enter your gender:</label>
+                    <label for="confirm-password">
+                        Confirm your password:
+                    </label>
+                    <input type="password" id="confirm-password">
 
-            <div class="radio">
-                <input type="radio" name="gender"> Male
-                <input type="radio" name="gender"> Female
-                <input type="radio" name="gender"> Others
-            </div>
+                    <label>Enter your gender:</label>
 
-            <br>
+                    <div class="radio-group">
 
-            <label>Enter your Date of Birth:</label>
-            <input type="date">
+                        <label>
+                            <input type="radio" name="gender">
+                            Male
+                        </label>
 
-            <label>Enter your Address:</label>
-            <textarea rows="3"></textarea>
+                        <label>
+                            <input type="radio" name="gender">
+                            Female
+                        </label>
 
-            <button type="submit">Submit</button>
+                        <label>
+                            <input type="radio" name="gender">
+                            Others
+                        </label>
 
-        </form>
+                    </div>
 
-    </fieldset>
+                    <label for="dob">
+                        Enter your Date of Birth:
+                    </label>
 
-</div>
+                    <input type="date" id="dob">
 
+                    <label for="address">
+                        Enter your Address:
+                    </label>
 
-<!-- Project 2 -->
+                    <textarea id="address" rows="3"></textarea>
 
-<h2>
-</h2>
+                    <button type="submit">
+                        Submit
+                    </button>
 
-<div class="survey-form">
+                </fieldset>
 
-    <form>
+            </form>
 
-        <label><b>Name</b></label>
-        <input type="text" placeholder="Enter your name">
-
-        <label><b>Email</b></label>
-        <input type="email" placeholder="Enter your email">
-
-        <label><b>Age</b></label>
-        <input type="number" placeholder="Enter your age">
-
-        <label><b>Which option best describes you?</b></label>
-
-        <select>
-            <option>Student</option>
-            <option>Teacher</option>
-            <option>Developer</option>
-        </select>
-
-        <label>
-            <b>Would you recommend GeeksforGeeks to a friend?</b>
-        </label>
-
-        <div class="survey-radio">
-            <input type="radio" name="recommend"> Yes <br>
-            <input type="radio" name="recommend"> No <br>
-            <input type="radio" name="recommend"> Maybe
         </div>
 
-        <br>
+    </section>
 
-        <label>
-            <b>Languages and Frameworks known (Check all that apply)</b>
-        </label>
+    <!-- Survey Form -->
 
-        <div class="check">
-            <input type="checkbox"> C <br>
-            <input type="checkbox"> C++ <br>
-            <input type="checkbox"> C# <br>
-             <input type="checkbox"> Java <br>
-            <input type="checkbox"> Python <br>
-            <input type="checkbox"> JavaScript <br>
-            <input type="checkbox"> React <br>
-            <input type="checkbox"> Angular <br>
-            <input type="checkbox"> Django <br>
-            <input type="checkbox"> Spring
+    <section class="section">
+
+        <h2>Survey Form</h2>
+
+        <div class="survey-form">
+
+            <form>
+
+                <label for="name">Name</label>
+                <input type="text" id="name"
+                placeholder="Enter your name">
+
+                <label for="survey-email">Email</label>
+                <input type="email" id="survey-email"
+                placeholder="Enter your email">
+
+                <label for="age">Age</label>
+                <input type="number" id="age"
+                placeholder="Enter your age">
+
+                <label for="role">
+                    Which option best describes you?
+                </label>
+
+                <select id="role">
+                    <option>Student</option>
+                    <option>Teacher</option>
+                    <option>Developer</option>
+                </select>
+
+                <label>
+                    Would you recommend GeeksforGeeks to a friend?
+                </label>
+
+                <div class="survey-radio">
+
+                    <label>
+                        <input type="radio" name="recommend">
+                        Yes
+                    </label>
+
+                    <label>
+                        <input type="radio" name="recommend">
+                        No
+                    </label>
+
+                    <label>
+                        <input type="radio" name="recommend">
+                        Maybe
+                    </label>
+
+                </div>
+
+                <label>
+                    Languages and Frameworks known
+                    (Check all that apply)
+                </label>
+
+                <div class="check-group">
+
+                    <label><input type="checkbox"> C</label>
+                    <label><input type="checkbox"> C++</label>
+                    <label><input type="checkbox"> C#</label>
+                    <label><input type="checkbox"> Java</label>
+                    <label><input type="checkbox"> Python</label>
+                    <label><input type="checkbox"> JavaScript</label>
+                    <label><input type="checkbox"> React</label>
+                    <label><input type="checkbox"> Angular</label>
+                    <label><input type="checkbox"> Django</label>
+                    <label><input type="checkbox"> Spring</label>
+
+                </div>
+
+                <label for="comments">
+                    Any comments or suggestions
+                </label>
+
+                <textarea id="comments" rows="3"
+                placeholder="Enter your comment here"></textarea>
+
+                <button class="submit-btn" type="submit">
+                    Submit
+                </button>
+
+            </form>
+
         </div>
 
-        <br>
+    </section>
 
-        <label><b>Any comments or suggestions</b></label>
+    <!--  Table 1 -->
 
-        <textarea rows="3"
-        placeholder="Enter your comment here"></textarea>
+    <section class="section">
 
-        <button class="submit-btn" type="submit">
-            Submit
-        </button>
+        <h2>Rowspan and Colspan Table</h2>
 
-    </form>
+        <div class="table-container">
 
-</div>
+            <table>
 
+                <tr>
+                    <td class="green">Cell[1,1]</td>
+
+                    <td class="green" colspan="2">
+                        Cell[2,1]
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="yellow">Cell[1,2]</td>
+
+                    <td class="yellow" rowspan="2">
+                        Cell[2,2]
+                    </td>
+
+                    <td class="yellow">
+                        Cell[3,2]
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="red">Cell[1,3]</td>
+                    <td class="red">Cell[3,3]</td>
+                </tr>
+
+            </table>
+
+        </div>
+    </section>
+
+    <!--Table 2 -->
+
+    <section class="section">
+
+        <h2 class="green-title">EIPC</h2>
+
+        <h3 class="sub-title">
+            Table with Rowspan and Colspan
+        </h3>
+
+        <div class="table-container">
+
+            <table>
+
+                <tr class="green-row">
+                    <th colspan="2">Name</th>
+                    <th>Level</th>
+                    <th>Department</th>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">Alice</td>
+                    <td rowspan="2">Brown</td>
+                    <td>4</td>
+                    <td rowspan="2">Manufacture</td>
+                </tr>
+
+                <tr class="yellow">
+                    <td>A</td>
+                </tr>
+
+                <tr class="yellow">
+                    <td rowspan="2">John</td>
+                    <td rowspan="2">Doe</td>
+                    <td>3</td>
+                    <td rowspan="2">ICT</td>
+                </tr>
+
+                <tr class="yellow">
+                    <td>B</td>
+                </tr>
+                <tr class="red">
+                    <td rowspan="2">Jane</td>
+                    <td rowspan="2">Smith</td>
+                    <td>5</td>
+                    <td rowspan="2">Accounting</td>
+                </tr>
+                <tr>
+                    <td class="blue">A</td>
+                </tr>
+            </table>
+        </div>
+    </section>
 </body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Rowspan and Colspan Tables</title>
 
-    <style>
-
-        body{
-            font-family: Arial;
-        }
-
-        table{
-            border-collapse: collapse;
-            margin: 20px auto;
-            width: 70%;
-            text-align: center;
-        }
-
-        td, th{
-            border: 3px solid red;
-            padding: 20px;
-        }
-
-        .green{
-            background: green;
-            color: black;
-        }
-
-        .yellow{
-            background: yellow;
-        }
-
-        .red{
-            background: red;
-        }
-
-        .blue{
-            background: blue;
-            color: white;
-        }
-
-    </style>
-</head>
-
-<body>
-
-<h2>
-</h2>
-
-<table>
-
-    <tr>
-        <td class="green">Cell[1,1]</td>
-
-        <td class="green" colspan="2">
-            Cell[2,1]
-        </td>
-    </tr>
-
-    <tr>
-        <td class="yellow">Cell[1,2]</td>
-
-        <td class="yellow" rowspan="2">
-            Cell[2,2]
-        </td>
-
-        <td class="yellow">
-            Cell[3,2]
-        </td>
-    </tr>
-
-    <tr>
-        <td class="red">Cell[1,3]</td>
-
-        <td class="red">Cell[2,3]</td>
-    </tr>
-
-</table>
-
-
-<h2>
-</h2>
-
-<h2 align="center" style="color:green;">EIPC</h2>
-
-<h3 align="center">Table with Rowspan and Colspan</h3>
-
-<table>
-
-    <tr class="green">
-        <th colspan="2">Name</th>
-        <th>Level</th>
-        <th>Department</th>
-    </tr>
-
-    <tr>
-        <td rowspan="2">Alice</td>
-        <td rowspan="2">Brown</td>
-        <td>4</td>
-        <td rowspan="2">Manufacture</td>
-    </tr>
-
-    <tr class="yellow">
-        <td>A</td>
-    </tr>
-
-    <tr class="yellow">
-        <td rowspan="2">John</td>
-        <td rowspan="2">Doe</td>
-        <td>3</td>
-        <td rowspan="2">ICT</td>
-    </tr>
-
-    <tr class="yellow">
-        <td>B</td>
-    </tr>
-
-    <tr class="red">
-        <td rowspan="2">Jane</td>
-        <td rowspan="2">Smith</td>
-        <td>5</td>
-        <td rowspan="2">Accounted</td>
-    </tr>
-
-    <tr>
-        <td class="blue">A</td>
-    </tr>
-
-</table>
-
-</body>
 </html>
