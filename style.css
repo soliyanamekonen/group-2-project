@@ -1,74 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body{
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    padding: 20px;
+}
 
-        body{
-            font-family: Arial;
-            margin: 30px;
-        }
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
 
-        h1{
-            font-size: 40px;
-        }
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-        h2{
-            margin-top: 40px;
-        }
+.section{
+    margin-bottom: 60px;
+}
 
-        /* Personal Form */
+/* =========================
+   Forms
+========================= */
 
-        .personal-form{
-            width: 400px;
-            border: 1px solid gray;
-            padding: 20px;
-            margin: auto;
-        }
+.personal-form,
+.survey-form{
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: auto;
+}
 
-        .personal-form input,
-        .personal-form textarea{
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-        }
+.personal-form{
+    max-width: 450px;
+    border: 1px solid gray;
+}
 
-        .radio input{
-            width: auto;
-        }
+.survey-form{
+    max-width: 500px;
+    border: 4px solid #00cc66;
+}
 
-        button{
-            padding: 10px 20px;
-            border: none;
-            background: gray;
-            cursor: pointer;
-        }
+fieldset{
+    border: 1px solid #999;
+    padding: 20px;
+}
 
-        /* Survey Form */
+legend{
+    font-weight: bold;
+    padding: 0 5px;
+}
 
-        .survey-form{
-            width: 450px;
-            border: 4px solid #00cc66;
-            padding: 20px;
-            margin: auto;
-        }
+label{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
 
-        .survey-form input,
-        .survey-form textarea,
-        .survey-form select{
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-        }
+input,
+textarea,
+select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
 
-        .survey-radio input,
-        .check input{
-            width: auto;
-        }
+.radio-group,
+.survey-radio,
+.check-group{
+    margin-top: 10px;
+}
 
-        .submit-btn{
-            width: 100%;
-            background: #00cc66;
-            color: black;
-            font-weight: bold;
-        }
+.radio-group label,
+.survey-radio label,
+.check-group label{
+    display: block;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
 
-    
+.radio-group input,
+.survey-radio input,
+.check-group input{
+    width: auto;
+    margin-right: 8px;
+}
+
+button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: gray;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+.submit-btn{
+    background: #00cc66;
+    color: black;
+    font-weight: bold;
+}
+
+/* =========================
+   Tables
+========================= */
+
+.table-container{
+    overflow-x: auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+    background: white;
+}
+
+td,
+th{
+    border: 3px solid red;
+    padding: 15px;
+    text-align: center;
+}
+
+.green{
+    background: green;
+    color: white;
+}
+
+.yellow{
+    background: yellow;
+}
+
+.red{
+    background: red;
+    color: white;
+}
+
+.blue{
+    background: blue;
+    color: white;
+}
+
+.green-row{
+    background: green;
+    color: white;
+}
+
+.green-title{
+    color: green;
+}
+
+.sub-title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 768px){
+
+    h1{
+        font-size: 32px;
+    }
+
+    .personal-form,
+    .survey-form{
+        width: 100%;
+    }
+
+    table{
+        min-width: 500px;
+    }
+}
+
+@media (max-width: 480px){
+
+    body{
+        padding: 10px;
+    }
+
+    h1{
+        font-size: 26px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    .personal-form,
+    .survey-form{
+        padding: 15px;
+    }
+
+    input,
+    textarea,
+    select,
+    button{
+        font-size: 14px;
+    }
+
+    table{
+        min-width: 450px;
+    }
+
+    td,
+    th{
+        padding: 10px;
+        font-size: 14px;
+    }
+}
